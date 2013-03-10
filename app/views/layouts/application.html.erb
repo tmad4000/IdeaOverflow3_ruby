@@ -7,8 +7,18 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+	<div class="navbar">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Idea Overflow</a>
+    <ul class="nav">
+      <li class="active"><a href="#">ideaMap</a></li>
+      <li><a href="#">inProgress</a></li>
+      <li><a href="#">Admire</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container" style="width:90%">
+	<%= yield %>
+</div>
 </body>
 </html>

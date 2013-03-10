@@ -1,3 +1,39 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#post_body {
+	height: 100px;
+	width: 90%;
+}
+
+label {
+	display: inline;
+}
+
+.post {
+	min-height: 40px;
+	background-color: #e6fbff;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	padding: 5px;
+	margin: 10px;
+
+}
+
+td.timecol {
+    width: 80px;
+    color:#AAA;
+    padding-right:0;
+    text-align:right;
+    font-size:10px;
+    display: inline;
+}
+
+.uid {
+    color:#AAA;
+    font-size:10px;
+    display: inline;
+}
+
+

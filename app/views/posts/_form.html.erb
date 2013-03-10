@@ -10,16 +10,22 @@
       </ul>
     </div>
   <% end %>
+<!--     <div class="field">
+      <%= f.label :body %> 
+      <%= f.text_area :body %>
+    </div>
+  <div class="field">
+    <%= f.label :author %><%= f.text_field :author, :class => "author" %>
+  </div> -->
 
-  <div class="field">
-    <%= f.label :author %><br />
-    <%= f.text_field :author %>
+  <div class="row-fluid" style="display: inline">
+    <span style="min-width: 60%; width: 80%; max-width: 60%">
+    <%= f.text_area :body %>
+    </span>
+     <span style="max-width: 10%">
+      <%= f.submit :class => "submit" %>
+    </span>
   </div>
-  <div class="field">
-    <%= f.label :comment %><br />
-    <%= f.text_field :comment %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+
+  
 <% end %>

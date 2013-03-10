@@ -1,25 +1,14 @@
-<h1>Listing posts</h1>
+<%= render "form" %>
 
-<table>
-  <tr>
-    <th>Author</th>
-    <th>Comment</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @posts.each do |post| %>
-  <tr>
-    <td><%= post.author %></td>
-    <td><%= post.comment %></td>
-    <td><%= link_to 'Show', post %></td>
-    <td><%= link_to 'Edit', edit_post_path(post) %></td>
-    <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+<table class="table">
+	<tbody>
+		<% @posts.each do |post| %>
+		<tr class="post" id=<%= post.tags.name.each %>
+		    <td class="ideaname"><%= post.body %></td>
+		    <td class="timecol pull-right"><%= post.created_at %></td>
+		    <td class="uid pull-right"><%= post.author %></td>
+		</tr>
+		<% end %>
+	</tbody>
 </table>
-
 <br />
-
-<%= link_to 'New Post', new_post_path %>

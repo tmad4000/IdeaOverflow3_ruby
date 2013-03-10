@@ -1,4 +1,4 @@
 class Tag < ActiveRecord::Base
-  attr_accessible :hits, :name
+  attr_accessible :name
   belongs_to :post
 end
